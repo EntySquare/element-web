@@ -25,7 +25,11 @@ export default class VectorAuthHeaderLogo extends React.PureComponent {
 
         return (
             <aside className="mx_AuthHeaderLogo">
-                <img src={logoUrl} alt="Element" />
+                <img
+                    src="https://redleaves-ety.oss-cn-shenzhen.aliyuncs.com/UserAvatar/9feb1c8c-f488-4ad9-9fc1-f3c8087f539d-658616000.png"
+                    alt="Element"
+                    style={{ borderRadius: "50%" }}
+                />
             </aside>
         );
     }

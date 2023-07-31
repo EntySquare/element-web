@@ -197,9 +197,9 @@ async function start(): Promise<void> {
             // Now that we've loaded the theme (CSS), display the config syntax error if needed.
             if (error instanceof SyntaxError) {
                 // This uses the default brand since the app config is unavailable.
-                return showError(_t("Your Element is misconfigured"), [
+                return showError(_t("Your Redleaves is misconfigured"), [
                     _t(
-                        "Your Element configuration contains invalid JSON. " +
+                        "Your Redleaves configuration contains invalid JSON. " +
                             "Please correct the problem and reload the page.",
                     ),
                     _t("The message from the parser is: %(message)s", {
@@ -231,7 +231,7 @@ async function start(): Promise<void> {
         logger.error(err);
         // Like the compatibility page, AWOOOOOGA at the user
         // This uses the default brand since the app config is unavailable.
-        await showError(_t("Your Element is misconfigured"), [
+        await showError(_t("Your Redleaves is misconfigured"), [
             extractErrorMessageFromError(err, _t("Unexpected error preparing the app. See console for details.")),
         ]);
     }
